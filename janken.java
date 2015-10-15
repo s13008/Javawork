@@ -9,17 +9,17 @@ class janken {
 
 		boolean handler = false;
 
-		String myHandG = "自分 : グー";
-		String myHandT = "自分 : チョキ";
-		String myHandP = "自分 : パー";
+		String myHandG = "自分 : グー\n";
+		String myHandT = "自分 : チョキ\n";
+		String myHandP = "自分 : パー\n";
 
-		String xHandG = "相手 : グー";
-		String xHandT = "相手 : チョキ";
-		String xHandP = "相手 : パー";
+		String xHandG = "相手 : グー\n";
+		String xHandT = "相手 : チョキ\n";
+		String xHandP = "相手 : パー\n";
 
-		String win = "結果 : 勝利！！";
-		String lose = "結果 : 敗北！！";
-		String draw = "結果 : あいこ！！";
+		String win = "結果 : 勝利！！\n";
+		String lose = "結果 : 敗北！！\n";
+		String draw = "結果 : あいこ！！\n";
 
 		int player = 0;
 		int x = 0;;
@@ -29,7 +29,7 @@ class janken {
 		System.out.println("最初はグー\nじゃんけん...");
 
 		while(!handler){
-			System.out.println("グー : 0 チョキ : 1 パー : 2");
+			System.out.println("グー:0   チョキ:1   パー:2");
 			player = std.nextInt();
 			if(player < 0 || player > 2){
 				System.out.println("0か1か2を入力してください。");
