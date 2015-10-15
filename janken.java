@@ -6,9 +6,6 @@ class janken {
 		Scanner std = new Scanner(System.in);
 		Random ran =new Random();	
 
-		int guu = 0;
-		int choki = 1;
-		int paa = 2;
 		int player;
 		int x;
 
@@ -20,37 +17,37 @@ class janken {
 
 		switch(player) {
 			case 0:
-				System.out.println("グー");
+				System.out.println("あなたはグー");
 				break;
 			case 1:
-				System.out.println("チョキ");
+				System.out.println("あなたはチョキ");
 				break;
 			case 2:
-				System.out.println("パー");
+				System.out.println("あなたはパー");
 				break;
 			default:
 				break;
 		}
 		switch(x) {
 			case 0:
-				System.out.println("グー");
+				System.out.println("CPはグー");
 				break;
 			case 1:
-				System.out.println("チョキ");
+				System.out.println("CPはチョキ");
 				break;
 			case 2:
-				System.out.println("パー");
+				System.out.println("CPはパー");
 				break;
 			default:
 				break;
 		}
 
 		if(x == player){
-			System.out.println();
+			System.out.println("あいこ");
 		}else if(x < player){
-			System.out.println();
+			System.out.println("負け");
 		}else if(x > player){
-			System.out.println();
+			System.out.println("勝ち");
 		}		
 
 	}
